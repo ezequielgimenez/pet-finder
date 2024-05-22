@@ -1,0 +1,17 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(191.08deg, #ffffff 8.17%, #def4f0 62.61%);
+}
+
+.marker {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #007cbf; /* Color del marcador */
+  border: 2px solid #fff; /* Borde del marcador */
+}
