@@ -65,6 +65,13 @@ export function initHeader() {
 
         const cerrarSession = shadow.querySelector(".cerrar-sesion");
         cerrarSession?.addEventListener("click", () => {
+          const currentState = state.getState();
+          for (const key in currentState) {
+            if (currentState.hasOwnProperty(key)) {
+              currentState[key] = "";
+            }
+          }
+          state.setState(currentState);
           state.cerrarSession();
           Router.go("/");
         });
